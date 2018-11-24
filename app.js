@@ -6,7 +6,7 @@ const app = express();
 //middleware
 
 app.set("view engine", "pug");
-app.use(bodyParser.urlencoded({ extended: true }));
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 app.get('/', function(request, response) {
   return response.redirect('/post');
@@ -14,6 +14,10 @@ app.get('/', function(request, response) {
 
 app.get('/post', function(request, response) {
   return response.render('post');
+});
+
+app.get('/new', function(request, response) {
+  return response.render('index', { title: 'Hey', message: 'Hello there!' });
 });
 
 //Hook up to API
@@ -26,9 +30,27 @@ var toneAnalyzer = new ToneAnalyzerV3({
 });
 
 
+app.post('/submit', urlencodedParser, function(request, response) {
+  var text = request.body.entry;
+  var toneParams = {
+    tone_input: { 'text': text },
+    content_type: 'application/json'
+  }
 
-app.post('/submit', function(request, response) {
-  return response.send(request.body);
+  toneAnalyzer.tone(toneParams, function (error, toneAnalysis) {
+    if (error) {
+      console.log(error);
+    } else {
+      var tone_id = toneAnalysis;
+      console.log(tone_id.document_tone.tones[0].tone_id);
+      if(tone_id.document_tone.tones[0].tone_id == "sadness"){
+        return response.render('sad');
+      }
+      else if(tone_id.document_tone.tones[0].tone_id == "joy"){
+        return response.render('happy');
+      }
+    }
+  });
 })
 
 
