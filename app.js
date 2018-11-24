@@ -7,6 +7,7 @@ const app = express();
 
 app.set("view engine", "pug");
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(favicon(path.join(__dirname, 'icons', 'smartjournal_logo.png')))
 
 app.get('/', function(request, response) {
   return response.redirect('/post');

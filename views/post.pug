@@ -1,6 +1,10 @@
 extends base.pug
 
 block content
-  form(action="/submit", method="post")
-    input(type="text", name="entry")
-    input(type="submit", name="done")
+  body
+    form(action="/submit", method="post")
+      h1 smart journal
+      p How are you?
+      textarea(name="txtJournal")
+      //- input(type="text", name="entry")
+      input(type="submit", name="done")

@@ -17,9 +17,13 @@ input[type="submit"]{
 }
 
 @media screen and (max-width: 768px){
+    textarea{
 
+    }
 }
 
 @media screen and (max-width: 360px){
-    
+    textarea{
+        
+    }
 }
