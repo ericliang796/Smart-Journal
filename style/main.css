@@ -1,0 +1,25 @@
+:root{
+    --main-bg: #FFF;
+    --textarea-bg: #rgba(255,255,240,0.37);
+}
+
+body{
+    background-color: var(--main-bg); 
+}
+
+textarea{
+    background-color: var(--textarea-bg);
+}
+
+input[type="submit"]{
+    float: right;
+    /* to do*/
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 360px){
+    
+}

@@ -14,7 +14,6 @@
     "body-parser": "*",
     "express": "*",
     "pug": "*",
-    "react": "^16.6.3",
     "watson-developer-cloud": "^3.13.0"
   },
   "author": "",
