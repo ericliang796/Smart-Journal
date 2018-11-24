@@ -1,0 +1,25 @@
+{
+  "name": "hackwesternv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rb2001/HackWesternV.git"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "pug": "*",
+    "watson-developer-cloud": "^3.13.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rb2001/HackWesternV/issues"
+  },
+  "homepage": "https://github.com/rb2001/HackWesternV#readme"
+}
