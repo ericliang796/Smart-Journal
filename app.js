@@ -8,6 +8,8 @@ const app = express();
 app.set("view engine", "pug");
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
+app.use('/bootstrap', express.static(__dirname + '/node_modules/boostrap/dist/css/'));
+
 app.get('/', function(request, response) {
   return response.redirect('/post');
 });

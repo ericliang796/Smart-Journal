@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "body-parser": "*",
+    "bootstrap": "^4.1.3",
     "express": "*",
     "pug": "*",
     "watson-developer-cloud": "^3.13.0"
