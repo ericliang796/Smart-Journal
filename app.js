@@ -1,16 +1,12 @@
 const express = require('express');
-const favicon = require('serve-favicon');
-const path = require('path');
 const bodyParser = require('body-parser');
 
 const app = express();
-app.use(favicon(path.join(__dirname, 'icons', 'smartjournal_logo.png')))
+
 //middleware
 
 app.set("view engine", "pug");
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
-
-app.use('/bootstrap', express.static(__dirname + '/node_modules/boostrap/dist/css/'));
 
 app.get('/', function(request, response) {
   return response.redirect('/post');
