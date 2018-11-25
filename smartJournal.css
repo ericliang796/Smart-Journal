@@ -1,0 +1,46 @@
+body{
+    font-family: Quicksand, sans-serif;
+    font-size: 18px;
+    color: black;
+    background-color: #DAE0D7;
+}
+
+h1{
+    color:#0B3AA6;
+    font-size: 50px;
+}
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFF0;
+    
+}
+
+p {
+    font-size: 22px;
+    text-indent: 250px;
+}
+
+button {
+    margin-left: 1060px;
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 7px 25px;
+    font-family: Quicksand, sans-serif;
+    
+}
