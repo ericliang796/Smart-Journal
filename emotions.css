@@ -1,0 +1,42 @@
+
+body {
+    font-family: Quicksand, sans-serif;
+  
+    background-size: 110%;
+   /* box-shadow: inset 0 0 0 1000px rgba(255,255,255,.2);*/
+    
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+p1 {
+    text-align: center;
+    
+}
+
+p1 {
+    text-align: center;
+}
+
+#divMain{
+    width: 75%;
+    background-color: rgba(255,255,255, 0.53);
+    height: 1000px;
+    margin: 0 auto;
+}
+ h1, h2{
+    /*display: none;*/
+}
+
